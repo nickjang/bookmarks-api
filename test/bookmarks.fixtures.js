@@ -24,4 +24,24 @@ function makeBookmarksArray() {
   ];
 }
 
-module.exports = { makeBookmarksArray };
+function makeMaliciousBookmark() {
+  const maliciousBookmark = {
+    id: 911,
+    title: '<script>alert("xss");</script>',
+    url: 'https://<script>alert("xss");</script>.com',
+    rating: 5,
+    description: '<img src="https://url.to.file.which/does-not.exist" onerror="alert(document.cookie);"> <strong></strong>'
+  }
+  const expectedBookmark = {
+    ...maliciousBookmark,
+    title: '&lt;script&gt;alert(\"xss\");&lt;/script&gt;',
+    url: 'https://&lt;script&gt;alert(\"xss\");&lt;/script&gt;.com',
+    description: `<img src="https://url.to.file.which/does-not.exist"> <strong></strong>`
+  }
+  return {
+    maliciousBookmark,
+    expectedBookmark,
+  }
+}
+
+module.exports = { makeBookmarksArray, makeMaliciousBookmark };

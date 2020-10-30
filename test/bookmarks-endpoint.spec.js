@@ -2,7 +2,7 @@ const { expect } = require('chai');
 const knex = require('knex');
 const supertest = require('supertest');
 const app = require('../src/app');
-const { makeBookmarksArray } = require('./bookmarks.fixtures');
+const { makeBookmarksArray, makeMaliciousBookmark } = require('./bookmarks.fixtures');
 
 describe('Bookmarks Endpoints', () => {
   let db;
@@ -43,6 +43,28 @@ describe('Bookmarks Endpoints', () => {
           .expect(200, testBookmarks);
       });
     });
+  
+    context('Given an XSS attack bookmark', () => {
+      const { maliciousBookmark, expectedBookmark } = makeMaliciousBookmark();
+
+      beforeEach('insert malicious bookmark', () => {
+        return db
+          .into('bookmarks')
+          .insert(maliciousBookmark);
+      });
+
+      it('removes XSS attack content', () => {
+        return supertest(app)
+          .get('/bookmarks')
+          .set('Authorization', 'api_token')
+          .expect(200)
+          .then(res => {
+            expect(res.body[0].title).to.eql(expectedBookmark.title);
+            expect(res.body[0].url).to.eql(expectedBookmark.url);
+            expect(res.body[0].description).to.eql(expectedBookmark.description);
+          });
+      });
+    });
   });
 
   describe('GET /bookmarks/:id', () => {
@@ -69,6 +91,28 @@ describe('Bookmarks Endpoints', () => {
           .get(`/bookmarks/${bookmarkId}`)
           .set('Authorization', 'api_token')
           .expect(200, expectedBookmark);
+      });
+    });
+  
+    context('Given an XSS attack bookmark', () => {
+      const { maliciousBookmark, expectedBookmark } = makeMaliciousBookmark();
+
+      beforeEach('insert malicious bookmark', () => {
+        return db
+          .into('bookmarks')
+          .insert(maliciousBookmark);
+      });
+
+      it('removes XSS attack content', () => {
+        return supertest(app)
+          .get(`/bookmarks/${maliciousBookmark.id}`)
+          .set('Authorization', 'api_token')
+          .expect(200)
+          .then(res => {
+            expect(res.body.title).to.eql(expectedBookmark.title);
+            expect(res.body.url).to.eql(expectedBookmark.url);
+            expect(res.body.description).to.eql(expectedBookmark.description);
+          });
       });
     });
   });
@@ -150,11 +194,24 @@ describe('Bookmarks Endpoints', () => {
     }
 
     context('Given an XSS attack bookmark', () => {
-      
+      const { maliciousBookmark, expectedBookmark } = makeMaliciousBookmark();
+
+      it('removes XSS attack content', () => {
+        return supertest(app)
+          .post('/bookmarks')
+          .set('Authorization', 'api_token')
+          .send(maliciousBookmark)
+          .expect(201)
+          .then(res => {
+            expect(res.body.title).to.eql(expectedBookmark.title);
+            expect(res.body.url).to.eql(expectedBookmark.url);
+            expect(res.body.description).to.eql(expectedBookmark.description);
+          });
+      });
     });
   });
 
-  describe.only('DELETE /bookmarks/:id', () => {
+  describe('DELETE /bookmarks/:id', () => {
     context('Given no bookmarks in the database', () => {
       it('responds with 404', () => {
         const bookmarkId = 8;
