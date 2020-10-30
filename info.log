@@ -10,3 +10,157 @@
 {"message":"Unauthorized request to path: /bookmarks","level":"error"}
 {"message":"Unauthorized request to path: /","level":"error"}
 {"message":"Unauthorized request to path: /","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Could not find id: 8","level":"error"}
+{"message":"Could not find id: 1","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/undefined","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/undefined","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/undefined","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid rating url. \n          https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"Given an invalid rating url. \n          https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid rating url. \n          https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"Given an invalid rating url. \n          https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid rating url. \n          https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"Given an invalid rating url. \n          https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid rating url. \n          https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"Given an invalid rating url. \n          https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid rating url. \n          https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"Given an invalid rating url. \n          https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid rating url. https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"Given an invalid rating url. https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid rating url. https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"Given an invalid rating url. https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid rating url. https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"Given an invalid rating url. https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/undefined","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid rating url. https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"Given an invalid rating url. https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid rating url. https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"Given an invalid rating url. https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid rating url. https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"Given an invalid rating url. https://www.google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid rating url. https://google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"Given an invalid rating url. https://www.google.com is not in format https://__.__","level":"error"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/undefined","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/undefined","level":"error"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/undefined","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks/undefined","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Deleted bookmark with id: 1","level":"info"}
+{"message":"Unauthorized request to path: /bookmarks","level":"error"}
+{"message":"Deleted bookmark with id: 1","level":"info"}

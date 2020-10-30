@@ -10,6 +10,19 @@ const BookmarksService = {
       .from('bookmarks')
       .where('id', id)
       .first();
+  },
+  insertBookmark(knex, bookmark) {
+    return knex
+      .into('bookmarks')
+      .insert(bookmark)
+      .returning('*')
+      .then(row => row[0]);
+  },
+  deleteBookmark(knex, id) {
+    return knex
+      .from('bookmarks')
+      .where({ id })
+      .delete();
   }
 };
 
