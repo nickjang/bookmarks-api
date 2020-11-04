@@ -184,3 +184,84 @@
 {"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
 {"message":"New bookmark [object Object] created","level":"info"}
 {"message":"Deleted bookmark with id: 1","level":"info"}
+{"message":"Unauthorized request to path: /api/bookmarks/123","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks/2","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks/2","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks/2","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Unauthorized request to path: /api/bookmarks/123","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks/2","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks/2","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks/2","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Unauthorized request to path: /api/bookmarks/123","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks/2","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks/2","level":"error"}
+{"message":"Unauthorized request to path: /api/bookmarks/2","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Deleted bookmark with id: 1","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Deleted bookmark with id: 1","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Deleted bookmark with id: 1","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Deleted bookmark with id: 1","level":"info"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'title' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Missing 'url' in request body","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"Given an invalid url. invalid URL is not in format https://__.__","level":"error"}
+{"message":"New bookmark [object Object] created","level":"info"}
+{"message":"Deleted bookmark with id: 1","level":"info"}

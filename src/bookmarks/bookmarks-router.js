@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const xss = require('xss');
 const logger = require('../logger.js');
@@ -11,13 +12,14 @@ const sanitize = (bookmark) => {
   const keysToSanitize = ['title', 'url', 'description'];
   let currentKey;
   for (currentKey of keysToSanitize) {
-    newBookmark[currentKey] = xss(newBookmark[currentKey]);
+    if (newBookmark.hasOwnProperty(currentKey) && newBookmark[currentKey])
+      newBookmark[currentKey] = xss(newBookmark[currentKey]);
   }
   return newBookmark;
 };
 
 bookmarkRouter
-  .route('/bookmarks')
+  .route('/')
   .get((req, res, next) => {
     const knexInstance = req.app.get('db');
     BookmarksService.getAllBookmarks(knexInstance)
@@ -70,14 +72,14 @@ bookmarkRouter
       .then(bookmark => {
         res
           .status(201)
-          .location(`/bookmarks/${bookmark.id}`)
+          .location(path.posix.join(req.originalUrl, `/${bookmark.id}`))
           .json(bookmark)
       })
       .catch(next);
   });
 
 bookmarkRouter
-  .route('/bookmarks/:id')
+  .route('/:id')
   .all((req, res, next) => {
     const id = req.params.id;
 
@@ -109,6 +111,28 @@ bookmarkRouter
       .deleteBookmark(req.app.get('db'), id)
       .then(() => {
         logger.info(`Deleted bookmark with id: ${id}`);
+        res.status(204).end();
+      })
+      .catch(next);
+  })
+  .patch(bodyParser, (req, res, next) => {
+    const { url, title, rating, description } = req.body;
+    const bookmarkToUpdate = { url, title, rating, description };
+
+    const numberOfValues = Object.values(bookmarkToUpdate).filter(Boolean).length;
+    if (numberOfValues === 0)
+      return res.status(400).json({
+        error: {
+          message: 'Request body must content either \'title\', \'url\', \'rating\' or \'description\''
+        }
+      });
+
+    BookmarksService.updateBookmark(
+      req.app.get('db'),
+      req.params.id,
+      sanitize(bookmarkToUpdate)
+    )
+      .then(numRowsAffected => {
         res.status(204).end();
       })
       .catch(next);
